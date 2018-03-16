@@ -1,0 +1,42 @@
+<div class="row" style="margin:10px 0;">
+    <div class="col-md-8">
+        <h1> Listado de desarrolladores.</h1>
+    </div>
+    <form class="" method="post">
+        <div class="col-md-3">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" name="searchEmail" class="form-control" placeholder="Ingrese el email a buscar" aria-describedby="basic-addon1" value="<?php echo $this->email; ?>">
+            </div>
+        </div>
+        <div class="col-md-1">
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <!-- <div class="col-md-12"> -->
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Position</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($this->developers as $developer): ?>
+                <tr>
+                    <td><?php echo $developer->getName(); ?></td>
+                    <td><?php echo $developer->getEmail(); ?></td>
+                    <td><?php echo $developer->getPosition(); ?></td>
+                    <td><?php echo $developer->getSalary(); ?></td>
+                    <td><a href="<?php echo "detail/{$developer->getId()}" ?>" class="btn btn-primary btn-sm">Ver detalle</a></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <!-- </div> -->
+</div>
