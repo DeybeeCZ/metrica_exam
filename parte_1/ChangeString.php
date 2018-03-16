@@ -46,14 +46,15 @@ class ChangeString
 
     }
 
+    $changeString = new ChangeString();
     $cad1 = '123 abcd*3';
-    echo "Entrada: {$cad1} - Salida: ".ChangeString::build($cad1);
+    echo "Entrada: {$cad1} - Salida: ".$changeString->build($cad1);
     echo PHP_EOL;
     $cad2 = '**Casa 52';
-    echo "Entrada: {$cad2} - Salida: ".ChangeString::build($cad2);
+    echo "Entrada: {$cad2} - Salida: ".$changeString->build($cad2);
     echo PHP_EOL;
     $cad3 = '**Casa 52Z';
-    echo "Entrada: {$cad3} - Salida: ".ChangeString::build($cad3);
+    echo "Entrada: {$cad3} - Salida: ".$changeString->build($cad3);
     echo PHP_EOL;
 
  ?>

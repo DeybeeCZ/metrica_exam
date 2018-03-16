@@ -45,18 +45,19 @@ class ClearPar
 
 }
 
+$clearPar = new ClearPar();
 $cad = "(​()()()()(()))))())((())";
-echo "Entrada:{$cad} - Salida: ".ClearPar::build($cad);
+echo "Entrada:{$cad} - Salida: ".$clearPar->build($cad);
 echo PHP_EOL;
 $cad1="()())()";
-echo "Entrada:{$cad1} - Salida: ".ClearPar::build($cad1);
+echo "Entrada:{$cad1} - Salida: ".$clearPar->build($cad1);
 echo PHP_EOL;
 $cad2="()(()";
-echo "Entrada:{$cad2} - Salida: ".ClearPar::build($cad2);
+echo "Entrada:{$cad2} - Salida: ".$clearPar->build($cad2);
 echo PHP_EOL;
 $cad3=")(";
-echo "Entrada:{$cad3} - Salida: ".ClearPar::build($cad3);
+echo "Entrada:{$cad3} - Salida: ".$clearPar->build($cad3);
 echo PHP_EOL;
 $cad4="((()";
-echo "Entrada:{$cad4} - Salida: ".ClearPar::build($cad4);
+echo "Entrada:{$cad4} - Salida: ".$clearPar->build($cad4);
 echo PHP_EOL;

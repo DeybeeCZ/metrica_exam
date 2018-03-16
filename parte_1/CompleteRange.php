@@ -30,8 +30,9 @@ class CompleteRange
 
 }
 
-var_dump(CompleteRange::build(['1', '2', '4', '5']));
-var_dump(CompleteRange::build([2, 4, 9]));
-var_dump(CompleteRange::build([55, 58, 60]));
+$completeRange = new CompleteRange();
+var_dump($completeRange->build(['1', '2', '4', '5']));
+var_dump($completeRange->build([2, 4, 9]));
+var_dump($completeRange->build([55, 58, 60]));
 
  ?>

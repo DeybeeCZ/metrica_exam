@@ -31,7 +31,7 @@ Una vez se encuentren instaladas todas las dependencias. deberiamos levantar el 
 php -S localhost:2020
 ```
 
-Si usan el último comando podran ingresar a **localhost:2020** desde su navegador.
+Si usan el último comando deberá hacerlo desde el directorio public de la parte 2,así podra ingresar a **localhost:2020** desde su navegador.
 
 La ruta del servicio expuesto es
 ```
